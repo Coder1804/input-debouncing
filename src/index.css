@@ -3,12 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+.input-container
+{
+  display: flex;
+  height: 60px;
+  overflow: hidden;
+  padding: 10px 15px;
+  align-items: center;
+}
 
 input[type="text"] {
   --yandex-color: #ffdb4d;
-  height: 30px;
+  height:100%;
   width: 200px;
   border: 1px solid var(--yandex-color);
   outline: none;
   padding: 10px;
+}
+.search-icon{
+  --yandex-color: #ffdb4d;
+  background-color: var(--yandex-color);
+  color:#fff;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.button
+{
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: .5s;
 }

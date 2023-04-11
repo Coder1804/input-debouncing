@@ -62,7 +62,7 @@ function App() {
   }, [offsetPage]);
   return (
     <div>
-      <div>
+      <div className="input-container">
         <input
           onChange={(e) => {
             setInputValue(e.target.value);
@@ -71,10 +71,10 @@ function App() {
           value={inputValue}
           className="results"
         />
-        <SearchIcon />
+        <SearchIcon className="search-icon" />
       </div>
-      <button onClick={() => handleOffsetPage(1)}>Nex page ...</button>
-      <button onClick={() => handleOffsetPage(-1)}>Prev page ...</button>
+      <button className="button button-next" onClick={() => handleOffsetPage(1)}>Nex page ...</button>
+      <button className="button button-prev" onClick={() => handleOffsetPage(-1)}>Prev page ...</button>
       <span
         style={{
           backgroundColor: "lightgreen",
